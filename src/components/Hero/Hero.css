@@ -1,0 +1,116 @@
+/* .hero_container {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	gap: 50px;
+}
+
+.hero_left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero_desc h1 {
+	font-size: 48px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.hero_join button {
+	padding: 0.7rem 2rem;
+	color: black;
+	font-family: "Poppins";
+	background: linear-gradient(
+		180deg,
+		rgb(184.52, 108.79, 244.02) 0%,
+		rgb(221.71, 132.1, 218.12) 35.42%,
+		rgba(155.21, 153.21, 253.58, 0.9) 58.85%,
+		rgb(90.61, 187.01, 217.46) 100%
+	);
+	border: none;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 2px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 40px;
+} */
+
+/* This is your existing CSS */
+.hero_container {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	gap: 50px;
+	z-index: -1;
+}
+
+.hero_left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.hero_right img {
+	width: 100%;
+}
+.hero_right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero_desc h1 {
+	font-size: 48px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.hero_join button {
+	padding: 0.7rem 2rem;
+	color: black;
+	font-family: "Poppins";
+	background: linear-gradient(
+		180deg,
+		rgb(184.52, 108.79, 244.02) 0%,
+		rgb(221.71, 132.1, 218.12) 35.42%,
+		rgba(155.21, 153.21, 253.58, 0.9) 58.85%,
+		rgb(90.61, 187.01, 217.46) 100%
+	);
+	border: none;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 2px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+	.hero_container {
+		flex-direction: column;
+		text-align: center;
+		padding: 100px 10px;
+		gap: 20px;
+	}
+
+	.hero_left {
+		width: 100%;
+	}
+
+	.hero_desc h1 {
+		font-size: 32px;
+	}
+
+	.hero_join button {
+		padding: 0.7rem 1.5rem;
+		font-size: 12px;
+	}
+
+	.hero_right img {
+		width: 70%;
+	}
+}
